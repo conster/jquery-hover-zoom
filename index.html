@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+      body { padding-top: 60px; }
+      ul { list-style-type: none; }
+      ul li { padding: 2px; }
+      .column { float: left; width: 50%;}
+    </style>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="hover_zoom.js"></script>
+
+    <script language="javascript" type="text/javascript">
+      $(window).load(function(){
+        $("table img").hoverZoom({zoom_percent: 40, zoom_in:{duration: 100}});
+        $("ul li img").hoverZoom();
+      });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+	      <ul>
+		<li><img src="demo/images/avatar.jpeg" /></li>
+		<li><img src="demo/images/avatar.jpeg" /></li>
+		<li><img src="demo/images/avatar.jpeg" /></li>
+		<li><img src="demo/images/avatar.jpeg" /></li>
+		<li><img src="demo/images/avatar.jpeg" /></li>
+		<li><img src="demo/images/avatar.jpeg" /></li>
+	      </ul>
+        </div>
+
+        <div class="column">
+	      <table class="table table-condensed">
+		<tr>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		</tr>
+		<tr>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		</tr
+		<tr>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		  <td><img src="demo/images/avatar.jpeg" /></td>
+		</tr>
+	      </table>
+        </div>
+    </div>
+</body>
+</html>
